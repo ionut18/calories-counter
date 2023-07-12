@@ -1,1 +1,15 @@
-<p>MUSTACHE</p>
+<html>
+<body>
+<div>
+    <h1>Search for food:</h1>
+    <form action="/search" method="POST">
+        <input type="text" name="item">
+        <button type="submit">Submit</button>
+    </form>
+</div>
+<div>
+    <h1>Result:</h1>
+    <p>{{searchItem}}</p>
+</div>
+</body>
+</html>
