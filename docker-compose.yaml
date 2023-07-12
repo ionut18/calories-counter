@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  postgres:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: calorie
+      POSTGRES_PASSWORD: lessCalories
+      POSTGRES_DB: calories_counter
+    ports:
+      - "5432:5432"
+    volumes:
+      - "~/caloriesDockerVolumes:/var/lib/postgresql/data/"
