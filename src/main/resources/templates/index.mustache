@@ -8,6 +8,37 @@
     </form>
 </div>
 <div>
+    <h1>Food calories table</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Portion default</th>
+            <th>Portion amount</th>
+            <th>Portion name</th>
+            <th>Increment</th>
+            <th>Multiplier</th>
+            <th>Calories</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#foodList}}
+            <tr>
+                <td>{{code}}</td>
+                <td>{{name}}</td>
+                <td>{{portionDefault}}</td>
+                <td>{{portionAmount}}</td>
+                <td>{{portionName}}</td>
+                <td>{{increment}}</td>
+                <td>{{multiplier}}</td>
+                <td>{{calories}}</td>
+            </tr>
+        {{/foodList}}
+        </tbody>
+    </table>
+</div>
+<div>
     <h1>Result:</h1>
     <p>{{searchItem}}</p>
 </div>

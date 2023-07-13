@@ -1,4 +1,4 @@
-package ro.oane.caloriescounter.records;
+package ro.oane.caloriescounter.record;
 
 public record SearchItem(String name) {
 }
